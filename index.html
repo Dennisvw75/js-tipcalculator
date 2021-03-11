@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Tip Calculator</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Calculate Your Tip</h1>
+      <form class="form">
+        <div class="form__group">
+          <label class="form__label-bill-amount" for="billamount"
+            >Bill Amount</label
+          >
+          <input
+            class="form__input-bill-amount"
+            type="number"
+            name="billamount"
+            id="billamount"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label-percentage-tip" for="percentagetip"
+            >Percentage Tip</label
+          >
+          <input
+            class="form__input-percentage-tip"
+            type="number"
+            name="percentagetip"
+            id="percentagetip"
+          />
+        </div>
+        <div class="form__group">
+          <label class="form__label-tip-amount" for="tipamount"
+            >Tip Amount</label
+          >
+          <p class="form__tip-amount">the tip amount to pay (js insertion)</p>
+        </div>
+        <div class="form__group">
+          <label for="total">Total</label>
+          <p class="form__total">total amount to pay (JS insertion)</p>
+        </div>
+        <button class="form__button">Calculate</button>
+      </form>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

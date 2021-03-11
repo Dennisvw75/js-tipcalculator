@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgba(66, 197, 245, 0.4),
+    rgba(47, 194, 247, 0.4)
+  );
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.7rem;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 4rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem; */
+  display: flex;
+  flex-direction: column;
+}
+.form__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.form__label-bill-amount {
+}
+.form__label-percentage-tip {
+}
+
+.form__button {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 20%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid rgb(66, 197, 245);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.form__button:hover {
+  background: rgb(66, 197, 245);
+  color: #fff;
+  border: 1px solid #000;
+}
