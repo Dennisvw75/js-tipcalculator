@@ -47,20 +47,23 @@ h1 {
 .form__group:not(:last-child) {
   margin-bottom: 1rem;
 }
-/* .form__label-bill-amount {
+.form__input-bill-amount {
+  font-weight: 400;
 }
-.form__label-percentage-tip {
-} */
+.form__input-percentage-tip {
+  font-weight: 400;
+}
+
+.par {
+  font-size: 0.85rem;
+  font-weight: 400;
+  background: #fff;
+  border: 0.1px solid #000;
+}
 
 .form__tip-amount {
-  background: #fff;
-  border: 1px solid #000;
-  text-align: center;
 }
 .form__total {
-  background: #fff;
-  border: 1px solid #000;
-  text-align: center;
 }
 
 .form__button {

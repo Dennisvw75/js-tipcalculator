@@ -8,13 +8,6 @@ const totalAmountEL = document.querySelector('.form__total');
 
 const btn = document.querySelector('.form__button');
 
-// Get bill amount value from the dom
-// Check bill amount for wrong input?
-// Get percentage tip from the dom
-// Check percentage tip for wrong input?
-// Create function to calculate x amount / percentage tip (the calculation for tip amount)
-// Percentage tip input needs to be converted from a whole number to a decimal;
-
 const bills = [];
 const tips = [];
 
@@ -23,10 +16,13 @@ function calculateTip(bill, perc) {
 }
 
 function addArrElement(arrOne, arrTwo) {
-  const totals = [...arrOne].map((e, i) => e + arrTwo[i]);
+  // using spread syntax to pass ArrOne array and mapping trough arrOne, adding element + idx of arrTwo;
+  const totals = [...arrOne].map((element, idx) => element + arrTwo[idx]);
+  // Using forEach to insert each element to the DOM;
   totals.forEach((el) => {
     totalAmountEL.textContent = el;
   });
+  // Return totals array
   return totals;
 }
 
