@@ -7,6 +7,7 @@ const tipAmountEL = document.querySelector('.form__tip-amount');
 const totalAmountEL = document.querySelector('.form__total');
 
 const btn = document.querySelector('.form__button');
+const resetBtn = document.querySelector('.reset');
 
 const bills = [];
 const tips = [];
@@ -33,4 +34,12 @@ btn.addEventListener('click', function (evt) {
   tips.push(tip);
   addArrElement(bills, tips);
   tipAmountEL.textContent = tip;
+});
+
+resetBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  billAmount.value = '';
+  percentageTip.value = '';
+  tipAmountEL.textContent = '';
+  totalAmountEL.textContent = '';
 });
